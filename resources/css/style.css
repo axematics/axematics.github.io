@@ -110,6 +110,10 @@ main {
     font-size: 1.2rem;
 }
 
+.right p {
+    font-weight: lighter;
+}
+
 #icon-strip {
     display: flex;
     justify-content: space-evenly;
@@ -153,6 +157,10 @@ main {
 
 #contact-page {
     text-align: center;
+}
+
+#contact-page h2 {
+    margin-bottom: 3rem;
 }
 
 footer {
