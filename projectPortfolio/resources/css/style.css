@@ -1,0 +1,220 @@
+/* UNIVERSAL */
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+}
+
+
+
+/* HEADER */
+header {
+    font-size: 3rem;
+    text-transform: lowercase;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    background-color: orange;
+    font-family: Inconsolata;
+}
+
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+header h1,
+nav li {
+    margin: 1rem;
+}
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 1fr 4fr;
+    width: 100%;
+    padding-top: 80px;
+    background-color: black;
+    color: orange;
+    font-family: Inconsolata;
+}
+
+.left {
+    grid-area: left;
+    text-align: center;
+    width: 300px;
+    font-size: 1rem;
+    line-height: 1.5em;
+    border-right: thin solid orange;
+}
+
+
+.right {
+    grid-area: right;
+    width: 100%;
+}
+
+#profile-picture {
+    max-width: 80%;
+    margin-top: 40px;
+    border-radius: 50%;
+}
+
+.bio-container {
+    margin: 2em auto;
+}
+
+.bio-container p {
+    margin: auto 3rem;
+}
+
+.right h2 { /* Armoury */
+    font-size: 3em;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.right h3 {
+    margin-left: 52px;
+    text-decoration: underline;
+}
+
+.right h4 {
+    margin: 10px auto;
+    text-decoration: none;
+}
+
+.right h5 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin: 1rem;
+    text-transform: lowercase;
+    font-weight: lighter;
+}
+
+.right h6 {
+    font-size: 1.2rem;
+}
+
+#icon-strip {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+    font-size: 4rem;
+    color: orange;
+}
+
+#landing {
+    text-align: center;
+}
+
+#landing h4 {
+    margin-bottom: 2rem;
+}
+
+.item {
+    margin: 2em;
+    width: 40%;
+    border: thick solid black;
+}
+
+.item:hover {
+    background-color: orange;
+    color: black;
+    border: thick solid orange;
+    cursor: pointer;
+}
+
+.item-pic {
+    width: 100%;
+    height: 10rem;
+}
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+#contact-page {
+    text-align: center;
+}
+
+footer {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-family: Inconsolata;
+}
+
+@media only screen and (max-width: 1080px) {
+    .item {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    header {
+        font-size: 1.8rem;
+    }
+    main {
+        padding-top: 60px;
+    }
+    #landing h4 {
+        display: none;
+    }
+    .left {
+        width: 200px;
+    }
+    h3, h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    header {
+        font-size: 1.1rem
+    }
+    main {
+        padding-top: 40px;
+    }
+    #icon-strip {
+        font-size: 2rem;
+        justify-content: space-between;
+    }
+    .right h2 {
+        font-size: 2rem;
+    }
+    .left {
+        width: 150px;
+        font-size: 65%;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    .right h5 {
+        font-size: 1rem;
+    }
+    .right h6 {
+        font-size: 0.8rem;
+    }
+    footer {
+        font-size: 50%;
+    }
+}
