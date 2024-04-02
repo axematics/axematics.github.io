@@ -46,6 +46,9 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault()
         skillsPage.style.display = '';
         contactPage.style.display = 'none';
+        document.getElementById("html-section").style.display = 'none';
+        document.getElementById("css-section").style.display = 'none';
+        document.getElementById("javascript-section").style.display = 'none';
     }
 
     const showContact = (event) => {
