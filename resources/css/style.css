@@ -153,6 +153,7 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 20px;
+    max-width: 100%;
 }
 
 #contact-page {
@@ -204,7 +205,7 @@ footer {
     }
     #icon-strip {
         font-size: 2rem;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .right h2 {
         font-size: 2rem;
@@ -212,6 +213,9 @@ footer {
     .left {
         width: 150px;
         font-size: 65%;
+    }
+    .item {
+        max-width: 50%;
     }
     h4 {
         font-size: 1.2rem;
